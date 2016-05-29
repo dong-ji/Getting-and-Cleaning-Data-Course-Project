@@ -57,6 +57,6 @@ WholeData_mean_std <- WholeData[,selectcol]
 library(dplyr)
 subject_activity_mean <- WholeData_mean_std %>% group_by(subject, activity) %>% summarize_each(funs(mean))
 
-#7. export dataset into csv file
+#7. export dataset into .txt file
 write.table(WholeData_mean_std, "E:\\academic development\\Data Scientist\\Data Science - Johns Hopkins University (Coursera)\\Course 3 Getting and Cleaning Data\\Week 4\\Project\\WholeData_mean_std.txt")
 write.table(subject_activity_mean, "E:\\academic development\\Data Scientist\\Data Science - Johns Hopkins University (Coursera)\\Course 3 Getting and Cleaning Data\\Week 4\\Project\\subject_activity_mean.txt")
