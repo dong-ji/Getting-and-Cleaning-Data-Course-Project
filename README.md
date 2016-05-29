@@ -1,7 +1,9 @@
 # Getting-and-Cleaning-Data-Course-Project
-Project Requirement:
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names.
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Project Steps using R
+1. import activity label and features tables
+2. filter mean and standard deviation from feature list
+3. import combine train data
+4. import combine test data
+5. combine test and train data
+6. creates a second, independent tidy data set with the average of each variable for each activity and each subject
+7. export dataset into txt file
